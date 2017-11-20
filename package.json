@@ -1,0 +1,26 @@
+{
+  "name": "nyt-react",
+  "version": "1.0.0",
+  "description": "a react based web app that curates NY Times articles and uses Mongo, NodeJS and helper functions so the user can save",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yolisabam/nyt-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yolisabam/nyt-react/issues"
+  },
+  "homepage": "https://github.com/yolisabam/nyt-react#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4",
+    "react-router-dom": "^4.2.2"
+  }
+}
