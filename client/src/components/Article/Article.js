@@ -7,9 +7,8 @@ import saveArticle from "../../utils/API";
    <h4>{props.title}</h4>
    <p>{props.created_at}</p>
    <a href={props.link} target><button className="btn btn-primary pull-right">View Article</button></a> 
-   <button className="btn btn-primary pull-right" onClick={saveArticle}>Save</button> 
+   <button className="btn btn-primary pull-right" onClick={() => api.saveArticle(props)}>Save</button> 
   </div>
-
 );
 
 export default Article;
