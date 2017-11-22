@@ -1,20 +1,19 @@
 import React from 'react';
-import Saved from './pages/saved';
-import Articles from './pages/Articles';
+import Search from './pages/Search';
 import Article from './components/Article';
+import API from "./utils/API";
+import Form from "./components/Form";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 const App = () => {
+  return (
   <Router>
     <div>
-      <Article 
-     title={`Test`}
-     date={`11/20/17`}
-     url={`https://www.google.com`}
-     />
+      <Search/>
     </div>
   </Router>
+  )
 };
 
 export default App;
