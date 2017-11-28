@@ -7,7 +7,7 @@ export default class Search extends Component {
 
   state = {
     articles: []
-  };
+  }
 
   updateStateArticles = (props) => {
     const query= {

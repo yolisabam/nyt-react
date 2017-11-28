@@ -1,25 +1,25 @@
 import React from 'react';
-import Search from './pages/Search';
-import Article from './components/Article';
-import API from "./utils/API";
-import Form from "./components/Form";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Saved from "./pages/Saved";
+import Search from "./pages/Search";
+import Nav from "./components/Nav";
+
 
 
 const App = () => {
   return (
-  <Router>
-    <div>
-      <Search/>
-    </div>
+  <div className="container">
+    <Nav />
+    <Router>
+      <Switch> 
+        <Route exact path="/" component={Search} /> 
+        <Route exact path="/search" component={Search} />
+        <Route path="/" component={Search} />
+      </Switch>
   </Router>
+  </div>
   )
 };
 
 export default App;
 
- // <Switch>
- //        <Route exact path="/" component={Articles} />
- //        <Route exact path="/articles" component={Articles} />
- //        <Route exact path="/saved" component={Saved} />
- //      </Switch>

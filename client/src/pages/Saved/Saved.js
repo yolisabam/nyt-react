@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Article from "../../components/Article";
-import API from "../../Utils/API.js";
+import API from "../../utils/API.js";
 
 class Saved extends Component {
   state = {
     articles: []
   }
   componentWillMount() {
-    api.getSaved().then((savedArticles) => {
+    API.getSaved().then((savedArticles) => {
       this.setState({
         articles: savedArticles.data
       })
@@ -15,7 +15,7 @@ class Saved extends Component {
   }
 
   getSaved = () => {
-    api.getSaved().then((savedArticles) => {
+    API.getSaved().then((savedArticles) => {
       this.setState({
         articles: savedArticles.data
       })

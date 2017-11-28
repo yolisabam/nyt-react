@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import API from "../../Utils/API.js";
+import API from "../../utils/API.js";
 import SaveButton from "./SaveButton.js"
 import DelButton from "./DelButton.js"
 
